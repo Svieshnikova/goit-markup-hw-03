@@ -21,7 +21,7 @@ ul {
   margin: 0;
   padding: 0;
 }
-.img {
+img {
   display: block;
 }
 .list {
@@ -48,6 +48,7 @@ ul {
   line-height: 1, 19;
   letter-spacing: 0.03em;
   color: var(--second-color);
+  margin-right: 93px;
 }
 .logo-dark {
   color: #000000;
@@ -68,6 +69,12 @@ ul {
 .header:focus {
   color: var(--second-color);
 }
+.header-item:not(:last-child) {
+  margin-right: 50px;
+}
+.contacts-item:not(:last-child) {
+  margin-right: 50px;
+}
 
 .contacts {
   font-weight: 500;
@@ -80,13 +87,27 @@ ul {
 .contacts:focus {
   color: var(--second-color);
 }
+.header .list {
+  display: flex;
+}
+.header-conteiner {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ececec;
+}
+.header-contacts {
+  margin-left: auto;
+}
 
 /* ---------Hero--------- */
 .hero {
   padding-top: 200px;
   padding-bottom: 200px;
+  background-color: #2f303a;
 }
 .hero-title {
+  display: flex;
+  align-items: center;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -94,7 +115,15 @@ ul {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
-  background-color: gray;
+  max-width: 696px;
+  max-height: 120px;
+}
+.hero-title-conteiner {
+  padding-top: 200px;
+  padding-bottom: 280px;
+  padding-left: 452px;
+  padding-right: 452px;
+  margin-bottom: 30px;
 }
 
 .hero-btn {
@@ -119,7 +148,8 @@ ul {
 
 /* ---------Features---------- */
 .features {
-  margin-top: 94px;
+  padding-top: 93px;
+  padding-bottom: 94px;
 }
 
 .features-title {
@@ -138,7 +168,8 @@ ul {
   color: var(--text-color);
 }
 .work {
-  margin-top: 94px;
+  padding-top: 0;
+  padding-bottom: 94px;
 }
 .work-title {
   font-weight: 700;
@@ -159,7 +190,8 @@ ul {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-color);
-  margin-bottom: 50px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .team-title {
   font-weight: 500;
@@ -168,6 +200,7 @@ ul {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-color);
+  margin-bottom: 50px;
 }
 .team-text {
   font-weight: 400;
@@ -180,9 +213,9 @@ ul {
 
 /* ------Footer------- */
 .footer {
+  padding-top: 60px;
+  padding-bottom: 57px;
   background-color: gray;
-  margin-top: 60px;
-  margin-bottom: 57px;
 }
 .address-map {
   font-style: normal;
@@ -191,6 +224,8 @@ ul {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #ffffff;
+  margin-top: 20px;
+  margin-bottom: 9px;
 }
 .address-item {
   font-style: normal;
@@ -199,9 +234,14 @@ ul {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 9px;
 }
 
 /* ------Portfolio-------- */
+.portfolio {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 
 .button-item {
   font-weight: 500;
@@ -219,6 +259,10 @@ ul {
 }
 div .buttons ul li {
   display: inline-block;
+}
+.buttons .list {
+  padding-top: 0;
+  padding-bottom: 34px;
 }
 
 .servis-title {
