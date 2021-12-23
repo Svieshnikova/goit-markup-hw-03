@@ -21,7 +21,9 @@ ul {
   margin: 0;
   padding: 0;
 }
-
+.img {
+  display: block;
+}
 .list {
   list-style: none;
 }
@@ -35,6 +37,7 @@ ul {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+  outline: 2px solid orange;
 }
 /* ----Header---- */
 
@@ -58,6 +61,8 @@ ul {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--title-color);
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 .header:hover,
 .header:focus {
@@ -77,6 +82,10 @@ ul {
 }
 
 /* ---------Hero--------- */
+.hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
 .hero-title {
   font-weight: 900;
   font-size: 44px;
@@ -87,6 +96,7 @@ ul {
   color: #ffffff;
   background-color: gray;
 }
+
 .hero-btn {
   font-weight: 700;
   font-size: 16px;
@@ -108,6 +118,9 @@ ul {
 }
 
 /* ---------Features---------- */
+.features {
+  margin-top: 94px;
+}
 
 .features-title {
   font-weight: 700;
@@ -124,7 +137,9 @@ ul {
   letter-spacing: 0.03em;
   color: var(--text-color);
 }
-
+.work {
+  margin-top: 94px;
+}
 .work-title {
   font-weight: 700;
   font-size: 36px;
@@ -132,9 +147,10 @@ ul {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-color);
+  margin-bottom: 50px;
 }
 
-/* --------Conteiner------- */
+/* --------Team------- */
 
 .team {
   font-weight: 700;
@@ -143,6 +159,7 @@ ul {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-color);
+  margin-bottom: 50px;
 }
 .team-title {
   font-weight: 500;
@@ -164,6 +181,8 @@ ul {
 /* ------Footer------- */
 .footer {
   background-color: gray;
+  margin-top: 60px;
+  margin-bottom: 57px;
 }
 .address-map {
   font-style: normal;
