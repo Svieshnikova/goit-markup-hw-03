@@ -2,6 +2,7 @@
   --title-color: #212121;
   --second-color: #2196f3;
   --text-color: #757575;
+  --background-color: #2f303a;
 }
 body {
   font-family: "Roboto", sans-serif;
@@ -100,7 +101,7 @@ img {
 
 /* ---------Hero--------- */
 .hero {
-  background-color: #2f303a;
+  background-color: var(--background-color);
 }
 .hero-title {
   display: flex;
@@ -251,7 +252,7 @@ img {
 
 /* ------Footer------- */
 .footer {
-  background-color: #2f303a;
+  background-color: var(--background-color);
 }
 .footer-container {
   padding-top: 60px;
