@@ -14,39 +14,35 @@
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    <header>
-        <header class="header">
+     <header class="header">
         <div class="conteiner header-conteiner">
         <a href="" class="logo link">Web<span class="logo-dark">Studio</span></a>
             <nav>
-            <ul class="header list">
-                <li class="header-item"><a class="header link" href="">Студия</a></li>
-                <li class="header-item"><a class="header link" href="portfolio.html">Портфолио</a></li>
-                <li class="header-item"><a class="header link" href="">Контакты</a></li>
+            <ul class="list subtitle-list">
+                <li class="subtitle-item"><a class="subtitle link" href="">Студия</a></li>
+                <li class="subtitle-item"><a class="subtitle link" href="portfolio.html">Портфолио</a></li>
+                <li class="subtitle-item"><a class="subtitle link" href="">Контакты</a></li>
             </ul>
             </nav>
-            <div class="header-contacts">
-        <ul class="contacts list">
+            
+        <ul class="list contacts-list">
             <li class="contacts-item"><a class="contacts link" href="maito:info@devstudio.com">info@devstudio.com</a></li>
             <li class="contacts-item"><a class="contacts link" href="tel:+380961111111">+38 096 111 11 11</a></li>
         </ul> 
         </div>
-        </div>
     </header>
     <main>
-        <section>
+        <section class="hero">
         <div class="conteiner">
-                <div class="hero">
-            <div class="hero-conteiner">
-            <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-                      
+             <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
+                 
                 <button type="button" class="hero-btn">Заказать услугу</button>
-            </div>
-        </section>
         </div>
-            <section class="features">
+        </section>
+        
+            <section class="section">
                 <div class="conteiner">
-                <h2></h2>
+                <h2 class="visually-hidden">Наши преимущества</h2>
             <ul class="list features-list">
                 <li class="features-items">
                 <h3 class="features-title">Внимание к деталям</h3>
@@ -70,7 +66,7 @@
             </ul>
             </div>
         </section>
-        <section class="work">    
+        <section class="section work">    
         <div class="conteiner">
             <h2 class="work-title">Чем мы занимаемся</h2>
             <ul class="list work-list">
@@ -83,62 +79,65 @@
            
         </div>
         </section>
-        <div class="team">
+        <section class="team">
             <div class="conteiner">
-            <h2>Наша команда</h2>
+            <h2 class="team-title">Наша команда</h2>
             <ul class="list team-list">
              
             <li class="team-item">
                 <img src="./images/Сотрудник1.jpg" alt="Игорь Демьяненко"
                 width="270"
                 height="260">
-                <h3 class="team-title">Игорь Демьяненко</h3>
+                <div class="team-desk">
+                <h3 class="team-name">Игорь Демьяненко</h3>
                 <p class="team-text">Product Designer</p>
+                </div>
             </li>
+
                        <li class="team-item">
                 <img src="./images/Сотрудник2.jpg" alt="Ольга Репина"
                 width="270"
                 height="260">
-                <h3 class="team-title">Ольга Репина</h3>
+                <div class="team-desk">
+                <h3 class="team-name">Ольга Репина</h3>
                 <p class="team-text">Frontend Developer</p>
+                </div>
             </li>            
             <li class="team-item">
                 <img src="./images/Сотрудник3.jpg" alt="Николай Тарасов"
                 width="270"
                 height="260">
-                <h3 class="team-title">Николай Тарасов</h3>
+                <div class="team-desk">
+                <h3 class="team-name">Николай Тарасов</h3>
                 <p class="team-text">Marketing</p>
+                </div>
             </li> 
             <li class="team-item">
                 <img src="./images/Сотрудник4.jpg" alt="Михаил Ермаков"
                 width="270"
                 height="260">
-                <h3 class="team-title">Михаил Ермаков</h3>
+                <div class="team-desk">
+                <h3 class="team-name">Михаил Ермаков</h3>
                 <p class="team-text">Marketing</p>
+                </div>
             </li> 
         </ul>
-        </div>
-    </div>
+            </div>
+        </section>
        </main>
-    
-    
-        <div class="conteiner">
-            <footer class="footer">
-                <div class="footer-container">
+        
+        <footer class="footer">
+            <div class="conteiner">
        
         <a href="" class="logo link">Web<span class="logo-light">Studio</span></a>
-<div>
-            <address>
-            <ul class="list footer">
+            <address class="address">
+            <ul class="list navigation">
                 <li class="address-map"><a class="link" href="https://goo.gl/maps/91BT5qwoaYXoo1Ds5" target="_blank" rel="nooperer noreferrer">г. Киев, пр-т Леси Украинки, 26</a> </li>
                 <li class="address-item"><a class="link" href="maito:info@example.com">info@example.com</a></li>
                 <li class="address-item"><a  class="link" href="tel:+380961111111">+38 096 111 11 11</a></li>
             </ul> 
-        </div>
-
-</div>
-        </div> 
-             </address>
+            </address>
+            </div>
 
     </footer>
 </body>
