@@ -49,7 +49,7 @@ img {
   padding-right: 15px;
   padding-left: 15px;
   margin: 0 auto;
-  outline: 2px solid orange;
+  /* outline: 2px solid orange; */
 }
 /* ----Header---- */
 
@@ -57,7 +57,7 @@ img {
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
-  line-height: 1, 19;
+  line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--second-color);
   margin-right: 93px;
@@ -71,7 +71,7 @@ img {
 .header {
   padding-top: 24px;
   padding-bottom: 25px;
-  border: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
 }
 .header-conteiner {
   display: flex;
@@ -112,7 +112,7 @@ img {
 
 /* ---------Hero--------- */
 .hero {
-  padding: 200px 0 280px 0;
+  padding: 200px 0;
   background-color: var(--background-color);
 }
 .hero-title {
@@ -159,10 +159,9 @@ img {
 
 .features-list {
   display: flex;
-  flex-wrap: wrap;
 }
 .features-items {
-  flex-basis: calc(100% / 4 - 30px);
+  flex-basis: calc((100% - 90px) / 4);
 }
 .features-items:not(:nth-child(4)) {
   margin-right: 30px;
@@ -214,12 +213,17 @@ img {
   flex-wrap: wrap;
 }
 .team-item {
+  background-color: #ffffff;
   flex-basis: calc(100% / 4 - 30px);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 .team-item:not(:nth-child(4)) {
   margin-right: 30px;
 }
 .team {
+  background-color: #f5f4fa;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -263,6 +267,14 @@ img {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+.logo-second {
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--second-color);
+}
 .address {
   margin-top: 20px;
 }
@@ -284,6 +296,9 @@ img {
   color: rgba(255, 255, 255, 0.6);
   margin-bottom: 9px;
 }
+.address-item:last-child {
+  margin-bottom: 0;
+}
 
 /* ------Portfolio-------- */
 
@@ -294,7 +309,6 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-color);
-  margin-right: 8px;
 }
 .button-item:hover,
 .button-item:focus {
@@ -307,8 +321,10 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding-top: 0;
-  padding-bottom: 34px;
+  margin-bottom: 50px;
+}
+.portfolio-item:not(:last-child) {
+  margin-right: 8px;
 }
 
 .servis-list {
@@ -325,7 +341,10 @@ img {
   margin-bottom: 30px;
 }
 .card {
+  padding: 20px 24px;
   border-bottom: 1px solid #ececec;
+  border-left: 1px solid #ececec;
+  border-right: 1px solid #ececec;
 }
 .servis-title {
   font-weight: 700;
@@ -333,7 +352,6 @@ img {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--title-color);
-  margin-top: 20px;
   margin-bottom: 4px;
 }
 .servis-text {
